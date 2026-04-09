@@ -178,7 +178,7 @@ Core configuration:
 - model: `KAN([2, 4, 4, 4, 1])`
 - initial-fit grid: `dense_points = 40`, `sparse_points = 0`
 - initial-fit optimizer: `AdamW(lr=5e-4, weight_decay=1e-4)`
-- initial-fit epochs: `20001`
+- initial-fit epochs: `30001`
 - time step: `delta_t = 1e-3`
 - number of steps: `500`
 
@@ -333,8 +333,6 @@ Depending on the notebook, you may see:
 ├── 1D_Allen-Cahn_EvoKAN_WF.ipynb
 ├── 2D_Heat_EvoKAN_SF.ipynb
 ├── 2D_Heat_EvoKAN_WF.ipynb
-├── 2D_Heat_EvoKAN_WF_2.ipynb
-├── Weak_form_evolutionary_KAN (6).pdf
 ├── requirements.txt
 ├── .gitignore
 ├── results/
@@ -343,15 +341,6 @@ Depending on the notebook, you may see:
 │   └── ...
 └── scripts/
 ```
-
-## Citation
-
-If you use this repository, please cite the associated weak-form evolutionary KAN paper and reference this repository.
-
-At minimum, include:
-
-- the paper distributed in this repository: `Weak_form_evolutionary_KAN (6).pdf`
-- the repository name: `EvoKAN-WF`
 
 ## License
 
