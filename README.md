@@ -316,7 +316,7 @@ Depending on the notebook, you may see:
 - The notebooks set random seeds in several places, but exact reproducibility can still depend on hardware, library versions, and solver tolerances.
 - The notebooks are research workflows, not hardened production solvers.
 - Increasing LSMR iteration counts does not necessarily improve the solution. In these evolutionary updates, overly accurate solves can amplify ill-conditioning and linearization error.
-- The weak-form and strong-form notebooks are not intended to be numerically identical. They solve the same PDEs using different residual enforcement strategies.
+- The weak-form and strong-form notebooks solve the same PDEs using different residual enforcement strategies.
 
 ## Important Usage Notes
 
