@@ -62,7 +62,7 @@ $$
 \varepsilon = 0.002
 $$
 
-### 2D Heat / Reaction-Diffusion Equation
+### 2D Heat Equation with Nonlinear Forcing Term
 
 The 2D heat notebooks solve:
 
