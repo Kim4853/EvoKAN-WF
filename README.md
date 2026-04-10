@@ -200,7 +200,7 @@ Core configuration:
 - time step: `delta_t = 1e-3`
 - number of steps: `500`
 - test function family: `cheb3`
-- tensor-product basis counts: `Kx = 15`, `Ky = 15`
+- tensor-product basis counts: `Kx = 40`, `Ky = 40`
 - quadrature order: `Nx = 20`, `Ny = 20`
 
 Implementation highlights:
@@ -314,6 +314,7 @@ Depending on the notebook, you may see:
 ## Reproducibility Notes
 
 - The notebooks set random seeds in several places, but exact reproducibility can still depend on hardware, library versions, and solver tolerances.
+- The speedup of the weak-form (WF) approach over the strong-form (SF) approach is observed to be relatively consistent across different computational environments, although exact performance may vary depending on hardware and solver configurations.
 - The notebooks are research workflows, not hardened production solvers.
 - Increasing LSMR iteration counts does not necessarily improve the solution. In these evolutionary updates, overly accurate solves can amplify ill-conditioning and linearization error.
 - The weak-form and strong-form notebooks solve the same PDEs using different residual enforcement strategies.
